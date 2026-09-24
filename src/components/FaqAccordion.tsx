@@ -50,14 +50,14 @@ export const FaqAccordion: React.FC = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-5 space-y-5"
         >
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-blue-700 text-sm font-bold">
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-sm font-bold">
             <TurbineLogo size={16} animate={true} />
             <span>F.A.Q</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-slate-900 leading-tight">
             Got Questions? <br />
-            <span className="text-blue-600">We've Got Answers!</span>
+            <span className="text-[#0b3856]">We've Got Answers!</span>
           </h2>
 
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-sm">
@@ -67,10 +67,10 @@ export const FaqAccordion: React.FC = () => {
           <div className="pt-1">
             <a
               href="#contact"
-              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-blue-100/80 hover:bg-blue-200/80 text-blue-800 font-bold text-sm tracking-wide transition-all group shadow-xs"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#4e87ba]/15 hover:bg-[#4e87ba]/25 text-[#0b3856] font-bold text-sm tracking-wide transition-all group shadow-xs"
             >
               <span>Contact Clinical Team</span>
-              <div className="w-5 h-5 rounded-full bg-white text-blue-600 flex items-center justify-center group-hover:translate-x-1 transition-transform">
+              <div className="w-5 h-5 rounded-full bg-white text-[#0b3856] flex items-center justify-center group-hover:translate-x-1 transition-transform">
                 <ArrowRight className="w-3.5 h-3.5" />
               </div>
             </a>
@@ -100,8 +100,8 @@ export const FaqAccordion: React.FC = () => {
                 }}
                 className={`rounded-2xl transition-colors duration-300 border overflow-hidden ${
                   isOpen
-                    ? 'bg-white border-blue-400/80 shadow-lg ring-2 ring-blue-100'
-                    : 'bg-white/85 hover:bg-white border-slate-200/80 shadow-xs hover:border-blue-200'
+                    ? 'bg-white border-[#4e87ba] shadow-lg ring-2 ring-[#4e87ba]/20'
+                    : 'bg-white/85 hover:bg-white border-slate-200/80 shadow-xs hover:border-[#4e87ba]/50'
                 }`}
               >
                 <button
@@ -109,7 +109,7 @@ export const FaqAccordion: React.FC = () => {
                   className="w-full text-left px-6 sm:px-7 py-5 flex items-center justify-between gap-4 cursor-pointer"
                 >
                   <span className={`text-sm sm:text-base md:text-lg font-bold transition-colors ${
-                    isOpen ? 'text-blue-900' : 'text-slate-900'
+                    isOpen ? 'text-[#0b3856]' : 'text-slate-900'
                   }`}>
                     {faq.q}
                   </span>
@@ -119,7 +119,7 @@ export const FaqAccordion: React.FC = () => {
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${
-                      isOpen ? 'bg-blue-600 text-white shadow-sm' : 'bg-blue-50 text-blue-600 hover:bg-blue-100'
+                      isOpen ? 'bg-[#0b3856] text-white shadow-sm' : 'bg-[#4e87ba]/15 text-[#0b3856] hover:bg-[#4e87ba]/25'
                     }`}
                   >
                     {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}

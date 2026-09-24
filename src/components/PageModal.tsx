@@ -11,7 +11,7 @@ export interface PageContent {
   title: string;
   subtitle: string;
   badge: string;
-  badgeColor?: 'blue' | 'amber';
+  badgeColor?: 'navy' | 'blue';
   icon: React.ReactNode;
   summary: string;
   keyPoints: { title: string; description: string }[];
@@ -28,7 +28,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'World\'s First Implanted Digital Mobility Outcome (DMO) Telemetry System',
     badge: 'Medical Device Class IIb',
     badgeColor: 'blue',
-    icon: <Activity className="w-6 h-6 text-blue-600" />,
+    icon: <Activity className="w-6 h-6 text-[#0b3856]" />,
     summary: 'The HIPbeacon™ is a sub-miniature, biocompatible titanium-encased active sensor implanted adjacent to hip fracture fixation hardware. It continuously captures 3-axis continuous inertial biomechanics, enabling uninterrupted objective mobility tracking throughout acute hospital stays and rehabilitation.',
     keyPoints: [
       { title: 'Sub-Minute Insertion Protocol', description: 'Placed via standard surgical incision in under 60 seconds alongside standard cephalomedullary nails or cannulated screws.' },
@@ -50,7 +50,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Centralized Telemetry Ingestion, Automated DMO Computation & EHR Integration',
     badge: 'ISO 27001 & HIPAA',
     badgeColor: 'blue',
-    icon: <Database className="w-6 h-6 text-blue-600" />,
+    icon: <Database className="w-6 h-6 text-[#0b3856]" />,
     summary: 'BIOS-Cloud is an enterprise healthcare SaaS environment delivering automated real-time mobility dashboards for orthopedic surgeons, physiotherapists, and ward nurses. Raw biomechanical telemetry from bedside gateways is automatically processed into standardized Digital Mobility Outcomes (DMOs).',
     keyPoints: [
       { title: 'Automated DMO Computation', description: 'Translates raw acceleration vectors into clinically meaningful parameters: daily active minutes, step count, gait speed, and sit-to-stand transitions.' },
@@ -70,8 +70,8 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     title: 'Digital Mobility Outcomes (DMO) Analytics Engine',
     subtitle: 'Scientifically Validated Algorithms Harmonized with EU Mobilise-D Standards',
     badge: 'Evidence-Based Algorithms',
-    badgeColor: 'amber',
-    icon: <Activity className="w-6 h-6 text-amber-500" />,
+    badgeColor: 'blue',
+    icon: <Activity className="w-6 h-6 text-[#4e87ba]" />,
     summary: 'Digital Mobility Outcomes represent the new clinical gold standard for functional recovery. The BIOS DMO Engine computes validated metrics that objectively correlate with patient functional independence, discharge readiness, and 1-year mortality risk.',
     keyPoints: [
       { title: 'Gait Velocity & Cadence', description: 'Accurate continuous estimation of walking velocity (m/s) without requiring timed 10-meter walk tests or camera setups.' },
@@ -92,7 +92,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Zero-Pairing, Plug-and-Play Ward Infrastructure for Continuous Data Transmission',
     badge: 'Medical Ward Hardware',
     badgeColor: 'blue',
-    icon: <Layers className="w-6 h-6 text-blue-600" />,
+    icon: <Layers className="w-6 h-6 text-[#0b3856]" />,
     summary: 'The BIOS Bedside Gateway is a low-profile wall-mounted medical receiver that autonomously collects wireless telemetry from HIPbeacon™ implants up to 15 meters away. It eliminates the need for manual Bluetooth pairing, Wi-Fi configuration, or nurse intervention.',
     keyPoints: [
       { title: 'Autonomous Sub-GHz Protocol', description: 'Operates on dedicated medical telemetry bands (433/868 MHz) that effortlessly penetrate tissue and hospital drywall with zero interference to clinical Wi-Fi.' },
@@ -115,7 +115,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Continuous Biomechanical Feedback for Trochanteric and Femoral Neck Fractures',
     badge: 'Trauma Protocol',
     badgeColor: 'blue',
-    icon: <Shield className="w-6 h-6 text-blue-600" />,
+    icon: <Shield className="w-6 h-6 text-[#0b3856]" />,
     summary: 'For orthopedic surgeons, the critical question post-fixation is whether the osteosynthesis construct is withstanding patient weight-bearing without hardware cutout or loss of reduction. BIOS provides the missing continuous post-op telemetry.',
     keyPoints: [
       { title: 'Early Detection of Cutout & Fixation Failure', description: 'Monitors sudden decreases in vertical acceleration and weight-bearing cycles that precede catastrophic lag screw cutout.' },
@@ -135,8 +135,8 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     title: 'Orthogeriatric Co-Management Protocol',
     subtitle: 'Preventing Delirium, Sarcopenia & Secondary Fractures in Vulnerable Seniors',
     badge: 'Geriatric Pathway',
-    badgeColor: 'amber',
-    icon: <HeartCrack className="w-6 h-6 text-amber-500" />,
+    badgeColor: 'blue',
+    icon: <HeartCrack className="w-6 h-6 text-[#4e87ba]" />,
     summary: 'Hip fractures in geriatric patients (>75 years) are catastrophic medical events. Bed rest induces rapid muscle atrophy (up to 1.5% per day) and precipitates acute delirium. BIOS real-time alerts ensure prompt mobilization within 24 hours of surgery.',
     keyPoints: [
       { title: 'Acute Delirium Mitigation', description: 'Patients mobilized within 24 hours of osteosynthesis show a 42% reduction in hospital-acquired post-operative delirium.' },
@@ -157,7 +157,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'A Systemic Clinical Protocol Tackling the 1-Year Geriatric Mortality Crisis',
     badge: 'Clinical Priority',
     badgeColor: 'blue',
-    icon: <Activity className="w-6 h-6 text-blue-600" />,
+    icon: <Activity className="w-6 h-6 text-[#0b3856]" />,
     summary: 'Globally, 22% of hip fracture patients pass away within 12 months of surgical intervention—a mortality rate exceeding many common cancers. Extensive evidence confirms that the primary modifiable determinant of survival is continuous functional mobility.',
     keyPoints: [
       { title: 'The Immobility Spiral', description: 'Immobility in the first 72 hours triggers pulmonary atelectasis, hospital-acquired pneumonia, deep vein thrombosis, and rapid deconditioning.' },
@@ -177,8 +177,8 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     title: 'Hospital Ward Efficiency & Health Economics',
     subtitle: 'Shortening Length of Stay (LOS) by 1.8 Days and Optimizing Bed Turnover',
     badge: 'Health Economics',
-    badgeColor: 'amber',
-    icon: <Award className="w-6 h-6 text-amber-500" />,
+    badgeColor: 'blue',
+    icon: <Award className="w-6 h-6 text-[#4e87ba]" />,
     summary: 'For healthcare executives and hospital administrators, hip fracture treatment represents high DRG cost and frequent bed blockages. BIOS provides the objective evidence required to safely discharge patients an average of 1.8 days earlier.',
     keyPoints: [
       { title: 'Average 1.8-Day LOS Reduction', description: 'Surgeons gain empirical confidence to discharge patients as soon as continuous DMO milestones confirm safe independent gait.' },
@@ -201,7 +201,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Joint Biomechanical Research and In-Vivo Validation in Davos, Switzerland',
     badge: 'AO Foundation Alliance',
     badgeColor: 'blue',
-    icon: <FileText className="w-6 h-6 text-blue-600" />,
+    icon: <FileText className="w-6 h-6 text-[#0b3856]" />,
     summary: 'Developed in close scientific collaboration with the AO Research Institute Davos (ARI)—the world\'s premier orthopedic trauma research organization—BIOS Medical technology builds upon decades of rigorous biomechanical and fracture fixation science.',
     keyPoints: [
       { title: 'In-Vivo Biomechanical Validation', description: 'Comprehensive pre-clinical testing verifying that sensor placement does not affect fracture healing, implant fatigue, or bone mineral density.' },
@@ -221,8 +221,8 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     title: 'Mobilise-D Consortium Registry Harmonization',
     subtitle: 'Aligning with the European Landmark Framework for Digital Mobility Outcomes',
     badge: 'EU IMI Framework',
-    badgeColor: 'amber',
-    icon: <Activity className="w-6 h-6 text-amber-500" />,
+    badgeColor: 'blue',
+    icon: <Activity className="w-6 h-6 text-[#4e87ba]" />,
     summary: 'BIOS Medical aligns its analytics pipeline with the European Innovative Medicines Initiative (IMI) Mobilise-D framework, ensuring that all computed Digital Mobility Outcomes adhere to global regulatory and academic standardization.',
     keyPoints: [
       { title: 'Harmonized Metric Definitions', description: 'Direct compliance with Mobilise-D definitions for real-world walking speed, cadence, stride length, and walking bout duration.' },
@@ -243,7 +243,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Peer-Reviewed Evidence Supporting Implanted Telemetry in Orthopedic Trauma',
     badge: 'Academic Bibliography',
     badgeColor: 'blue',
-    icon: <FileText className="w-6 h-6 text-blue-600" />,
+    icon: <FileText className="w-6 h-6 text-[#0b3856]" />,
     summary: 'A curated bibliography of peer-reviewed articles, symposium presentations, and clinical trial results demonstrating the safety, accuracy, and clinical utility of the BIOS Medical platform.',
     keyPoints: [
       { title: 'Journal of Orthopaedic Trauma (2025)', description: '"Objective Continuous In-Vivo Mobility Telemetry Following Cephalomedullary Nailing of Trochanteric Fractures: A Prospective Multi-Center Trial."' },
@@ -263,8 +263,8 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     title: 'CE-Mark & Regulatory Compliance Roadmap',
     subtitle: 'European Medical Device Regulation (EU MDR 2017/745) Class IIb Pathway',
     badge: 'MDR Class IIb Submission',
-    badgeColor: 'amber',
-    icon: <Award className="w-6 h-6 text-amber-500" />,
+    badgeColor: 'blue',
+    icon: <Award className="w-6 h-6 text-[#4e87ba]" />,
     summary: 'BIOS Medical AG is systematically executing its regulatory timeline under EU MDR 2017/745 Class IIb for active implantable medical devices, alongside ISO 13485:2016 quality management system certification.',
     keyPoints: [
       { title: 'ISO 13485:2016 Certification', description: 'Full Quality Management System certified by European Notified Body for design, manufacturing, and distribution of active medical devices.' },
@@ -287,7 +287,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Restoring Human Independence Through Precision Swiss Medical Technology',
     badge: 'Founded Davos, Switzerland',
     badgeColor: 'blue',
-    icon: <MapPin className="w-6 h-6 text-blue-600" />,
+    icon: <MapPin className="w-6 h-6 text-[#0b3856]" />,
     summary: 'BIOS Medical AG is a Swiss clinical-stage medical device company headquartered in Davos, Switzerland. Founded by orthopedic surgeons, biomechanical engineers, and digital health pioneers, BIOS is on a mission to transform the outcome of 1.7 million hip fracture patients worldwide.',
     keyPoints: [
       { title: 'Swiss Precision Engineering', description: 'All hardware and firmware are engineered in Switzerland in partnership with top Swiss research institutes and micro-manufacturing hubs.' },
@@ -308,7 +308,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Pioneering Executives in Orthopedic Surgery, Medtech & Digital Healthcare',
     badge: 'Executive Leadership',
     badgeColor: 'blue',
-    icon: <Award className="w-6 h-6 text-blue-600" />,
+    icon: <Award className="w-6 h-6 text-[#0b3856]" />,
     summary: 'The BIOS Medical executive leadership unites decades of experience in orthopedic trauma surgery, regulatory affairs, active implant engineering, and healthcare enterprise SaaS deployment.',
     keyPoints: [
       { title: 'Prof. Dr. med. Markus Weber – Chief Executive Officer & Co-Founder', description: 'Senior Consultant Orthopedic Trauma Surgeon; former Lead Investigator at AO Research Institute; over 22 years of clinical fracture management experience.' },
@@ -323,8 +323,8 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     title: 'Scientific & Clinical Advisory Board',
     subtitle: 'World Key Opinion Leaders in Orthopedic Trauma and Geriatric Medicine',
     badge: 'Scientific Advisory Board',
-    badgeColor: 'amber',
-    icon: <Award className="w-6 h-6 text-amber-500" />,
+    badgeColor: 'blue',
+    icon: <Award className="w-6 h-6 text-[#4e87ba]" />,
     summary: 'Our Scientific Advisory Board comprises internationally renowned professors of orthopedic surgery, geriatric medicine, and health economics from leading global university hospitals.',
     keyPoints: [
       { title: 'Prof. Dr. med. Christian Krettek (Hannover/Davos)', description: 'Pioneer of minimally invasive fracture fixation techniques and past Chairman of AO Trauma International.' },
@@ -340,7 +340,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Compliant with Swiss Federal Data Protection Act (FADP) & EU GDPR 2016/679',
     badge: 'Swiss Data Privacy',
     badgeColor: 'blue',
-    icon: <Lock className="w-6 h-6 text-blue-600" />,
+    icon: <Lock className="w-6 h-6 text-[#0b3856]" />,
     summary: 'BIOS Medical AG is strictly committed to protecting the privacy, confidentiality, and sovereign rights of patients and healthcare professionals. All patient biomechanical telemetry is pseudonymized at the bedside gateway before transmission.',
     keyPoints: [
       { title: 'Zero Direct Patient Identifiers (PII) on Implants', description: 'HIPbeacon™ implants broadcast only encrypted pseudo-random device identifiers; no patient names, birthdates, or hospital IDs are stored on the device.' },
@@ -357,7 +357,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Governing the Use of BIOS-Cloud, Bedside Gateways and Clinical APIs',
     badge: 'Legal & Clinical Governance',
     badgeColor: 'blue',
-    icon: <FileText className="w-6 h-6 text-blue-600" />,
+    icon: <FileText className="w-6 h-6 text-[#0b3856]" />,
     summary: 'These Terms of Service govern the access and use of the BIOS-Cloud platform, bedside telemetry hardware, and clinical software interfaces by hospital networks, research centers, and healthcare providers.',
     keyPoints: [
       { title: 'Clinical Decision Support Designation', description: 'BIOS DMO analytics are designed to assist healthcare professionals by providing objective movement data. They do not replace independent clinical diagnosis or surgical judgement.' },
@@ -373,7 +373,7 @@ export const FOOTER_PAGES: Record<string, PageContent> = {
     subtitle: 'Official Corporate Registry & Legal Information — BIOS Medical AG',
     badge: 'CHE-371.993.848',
     badgeColor: 'blue',
-    icon: <MapPin className="w-6 h-6 text-blue-600" />,
+    icon: <MapPin className="w-6 h-6 text-[#0b3856]" />,
     summary: 'Corporate information published in accordance with Article 3 of the Swiss Federal Act Against Unfair Competition (UWG) and the Swiss Code of Obligations.',
     keyPoints: [
       { title: 'Company Name', description: 'BIOS Medical AG (BIOS Medical Ltd.)' },
@@ -432,7 +432,7 @@ export const PageModal: React.FC<PageModalProps> = ({ pageId, onClose, onRequest
           className="relative w-full max-w-3xl max-h-[90vh] bg-white rounded-3xl shadow-2xl border border-slate-200/90 overflow-hidden flex flex-col z-10"
         >
           {/* Top Header Bar */}
-          <div className="p-6 sm:p-8 bg-gradient-to-r from-blue-600 via-blue-600 to-indigo-700 text-white relative shadow-md">
+          <div className="p-6 sm:p-8 bg-gradient-to-r from-[#0b3856] via-[#0b3856] to-[#4e87ba] text-white relative shadow-md">
             {/* Close button */}
             <button
               onClick={onClose}
@@ -447,7 +447,7 @@ export const PageModal: React.FC<PageModalProps> = ({ pageId, onClose, onRequest
               <span className="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/20 text-white border border-white/30">
                 {content.category}
               </span>
-              <span className="px-3.5 py-1 rounded-full text-xs font-black tracking-wide bg-amber-400 text-slate-900 shadow-xs">
+              <span className="px-3.5 py-1 rounded-full text-xs font-black tracking-wide bg-[#4e87ba] text-white shadow-xs">
                 {content.badge}
               </span>
             </div>
@@ -456,7 +456,7 @@ export const PageModal: React.FC<PageModalProps> = ({ pageId, onClose, onRequest
             <h2 className="text-2xl sm:text-3xl font-black font-heading tracking-tight text-white leading-tight">
               {content.title}
             </h2>
-            <p className="text-sm sm:text-base text-blue-100 font-medium mt-1.5 leading-snug">
+            <p className="text-sm sm:text-base text-white/80 font-medium mt-1.5 leading-snug">
               {content.subtitle}
             </p>
           </div>
@@ -464,8 +464,8 @@ export const PageModal: React.FC<PageModalProps> = ({ pageId, onClose, onRequest
           {/* Scrollable Content Body */}
           <div className="p-6 sm:p-8 overflow-y-auto space-y-6 text-slate-700">
             {/* Executive Summary */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-blue-50/70 border border-blue-100/90 text-sm sm:text-base text-slate-800 leading-relaxed">
-              <span className="font-bold text-blue-900 block mb-1">Clinical Overview:</span>
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#4e87ba]/10 border border-[#4e87ba]/20 text-sm sm:text-base text-slate-800 leading-relaxed">
+              <span className="font-bold text-[#0b3856] block mb-1">Clinical Overview:</span>
               {content.summary}
             </div>
 
@@ -479,7 +479,7 @@ export const PageModal: React.FC<PageModalProps> = ({ pageId, onClose, onRequest
                   {content.clinicalMetrics.map((m, idx) => (
                     <div key={idx} className="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
                       <div className="text-xs text-slate-500 font-semibold">{m.label}</div>
-                      <div className="text-xl sm:text-2xl font-black text-blue-600 font-heading mt-0.5">{m.value}</div>
+                      <div className="text-xl sm:text-2xl font-black text-[#0b3856] font-heading mt-0.5">{m.value}</div>
                       <div className="text-xs font-medium text-slate-600 mt-1">{m.change}</div>
                     </div>
                   ))}
@@ -495,8 +495,8 @@ export const PageModal: React.FC<PageModalProps> = ({ pageId, onClose, onRequest
               <div className="space-y-3.5">
                 {content.keyPoints.map((kp, idx) => (
                   <div key={idx} className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50/80 border border-slate-200/70">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
-                      <CheckCircle className="w-3.5 h-3.5 text-blue-600" />
+                    <div className="w-6 h-6 rounded-full bg-[#4e87ba]/15 text-[#0b3856] flex items-center justify-center shrink-0 mt-0.5">
+                      <CheckCircle className="w-3.5 h-3.5 text-[#4e87ba]" />
                     </div>
                     <div>
                       <h5 className="text-sm font-bold text-slate-900">{kp.title}</h5>
@@ -509,8 +509,8 @@ export const PageModal: React.FC<PageModalProps> = ({ pageId, onClose, onRequest
 
             {/* Regulatory or Compliance Note */}
             {content.regulatoryNote && (
-              <div className="p-3.5 rounded-xl bg-amber-50/80 border border-amber-200 text-amber-900 text-xs sm:text-sm leading-relaxed flex items-start gap-2.5">
-                <Shield className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+              <div className="p-3.5 rounded-xl bg-[#4e87ba]/10 border border-[#4e87ba]/25 text-[#0b3856] text-xs sm:text-sm leading-relaxed flex items-start gap-2.5">
+                <Shield className="w-4 h-4 text-[#4e87ba] shrink-0 mt-0.5" />
                 <span>{content.regulatoryNote}</span>
               </div>
             )}
@@ -519,7 +519,7 @@ export const PageModal: React.FC<PageModalProps> = ({ pageId, onClose, onRequest
           {/* Modal Footer Actions */}
           <div className="p-4 sm:p-6 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3.5">
             <div className="text-xs text-slate-500 flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-blue-600" />
+              <MapPin className="w-3.5 h-3.5 text-[#0b3856]" />
               <span>BIOS Medical AG · Davos Innovation Center, Switzerland</span>
             </div>
 
@@ -540,7 +540,7 @@ export const PageModal: React.FC<PageModalProps> = ({ pageId, onClose, onRequest
                     if (el) el.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="flex-1 sm:flex-initial px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
+                className="flex-1 sm:flex-initial px-6 py-2.5 rounded-full bg-[#0b3856] hover:bg-[#0b3856]/90 text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
               >
                 <span>Request Clinical Consultation</span>
                 <ArrowRight className="w-4 h-4" />

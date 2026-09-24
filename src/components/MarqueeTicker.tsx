@@ -35,10 +35,10 @@ export const MarqueeTicker: React.FC = () => {
       >
         {[...items, ...items].map((text, idx) => (
           <div key={idx} className="flex items-center gap-7 mx-5">
-            <span className="text-sm sm:text-base font-black font-heading tracking-widest text-slate-600 uppercase hover:text-blue-600 transition-colors cursor-default">
+            <span className="text-sm sm:text-base font-black font-heading tracking-widest text-slate-600 uppercase hover:text-[#0b3856] transition-colors cursor-default">
               {text}
             </span>
-            <div className={idx % 2 === 0 ? "text-blue-600" : "text-amber-500"}>
+            <div className={idx % 2 === 0 ? "text-[#0b3856]" : "text-[#4e87ba]"}>
               <TurbineLogo size={16} animate={false} />
             </div>
           </div>

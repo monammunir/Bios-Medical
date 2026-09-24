@@ -17,14 +17,14 @@ export const EvidencePage: React.FC = () => {
     >
       {/* Page Hero Header */}
       <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-bold tracking-wide uppercase mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-xs sm:text-sm font-bold tracking-wide uppercase mb-4">
           <TurbineLogo size={15} animate={true} />
           <span>EVIDENCE-BASED HEALTH ECONOMICS</span>
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading text-slate-900 tracking-tight leading-tight">
           Clinical Evidence & <br />
-          <span className="text-blue-600">Health Economic Impact</span>
+          <span className="text-[#0b3856]">Health Economic Impact</span>
         </h1>
 
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
@@ -39,7 +39,7 @@ export const EvidencePage: React.FC = () => {
       <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200/90 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+            <div className="w-12 h-12 rounded-2xl bg-[#4e87ba]/15 text-[#0b3856] flex items-center justify-center shrink-0">
               <FileText className="w-6 h-6" />
             </div>
             <div>
@@ -52,7 +52,7 @@ export const EvidencePage: React.FC = () => {
 
           <Link
             to="/contact"
-            className="px-7 py-3.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold flex items-center gap-2 shadow-md shrink-0 transition-all"
+            className="px-7 py-3.5 rounded-full bg-[#0b3856] hover:bg-[#0b3856]/90 text-white text-sm font-bold flex items-center gap-2 shadow-md shrink-0 transition-all"
           >
             <span>Request Research Dossier</span>
             <ArrowRight className="w-4 h-4" />

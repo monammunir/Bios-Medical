@@ -1,7 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TurbineLogo } from './TurbineLogo';
-import { Award, GraduationCap, MapPin, ExternalLink, Sparkles } from 'lucide-react';
 
 export const AboutLeadership: React.FC = () => {
   const leadership = [
@@ -9,150 +7,145 @@ export const AboutLeadership: React.FC = () => {
       name: "Dr. Markus Windolf",
       role: "CEO & Co-Founder",
       credentials: "PhD Human Biology · MSc Mechanical Engineering",
-      bio: "20 years in orthopedic biomechanics and medical device innovation. Inventor and team-lead of the AO Fracture Monitor (first active implantable sensor for continuous bone healing measurement) and the CE-marked Biphasic Plate. Recognized on Stanford University's list of the world's top 2% of scientists.",
-      image: "/real_bios/markus_windolf_ceo.jpg",
-      highlight: "Stanford Top 2% Scientist"
+      bio: "20 years in orthopedic biomechanics and medical device innovation. Inventor of the AO Fracture Monitor and the CE-marked Biphasic Plate. Recognized on Stanford University's list of the world's top 2% of scientists.",
+      image: "/real_bios/markus_windolf_ceo.jpg"
     },
     {
       name: "Dr. Patrick Stepanek",
       role: "COO & Co-Founder",
       credentials: "PhD Flexible Robotics · MSc Applied Physics · MBA",
-      bio: "Over 20 years of management leadership across Europe and North America. CEO of Anjuna, founding board member of Saturo, and co-founder of Spine Nuances (Coligne spine implants). Passionate about addressing unmet med-tech needs through data-driven scalable solutions.",
-      image: "/real_bios/patrick_stepanek_coo.jpg",
-      highlight: "20+ Yrs Global MedTech Ops"
+      bio: "Over 20 years of management leadership across Europe and North America. Passionate about addressing unmet med-tech needs through data-driven scalable solutions.",
+      image: "/real_bios/patrick_stepanek_coo.jpg"
     },
     {
       name: "Viktor Varjas",
       role: "Senior Software Developer",
       credentials: "MSc Computer Science · BSc IT Engineering",
-      bio: "10+ years specializing in medical device software engineering and IEC 62304 software life-cycles. Former Research Fellow at GE Healthcare and core software architect for the AO Fracture Monitor embedded telemetry at the AO Research Institute Davos.",
-      image: "/real_bios/viktor_varjas_dev.jpg",
-      highlight: "IEC 62304 Software Expert"
+      bio: "10+ years specializing in medical device software engineering and IEC 62304 software life-cycles. Core software architect for embedded telemetry at the AO Research Institute Davos.",
+      image: "/real_bios/viktor_varjas_dev.jpg"
     }
   ];
 
   const advisors = [
-    { name: "Prof. Dr. hc. mult. Robert Frigg", role: "Chairman of Board, 41medical AG · Former CTO Synthes Inc." },
-    { name: "Prof. Dr. med. MBA Benedikt Braun", role: "Managing Senior Physician, Reconstructive Surgery, BG Klinik Tübingen" },
-    { name: "Dr. Bernd Grimm, PhD", role: "Group Leader Human Motion & Digital Methods, Luxembourg Institute of Health" },
-    { name: "Prof. Dr. med. Michael Schütz", role: "Director Jamieson Trauma Institute · Former Director Charité Berlin" },
-    { name: "Dr. Bernd Robioneck", role: "Former VP Global R&D Stryker Trauma & Extremities" },
-    { name: "Prof. Kenneth A. Egol, MD", role: "Vice Chairman & Professor Orthopedic Trauma, NYU Langone Health" }
+    { 
+      name: "Prof. Dr. hc. mult. Robert Frigg", 
+      role: "Chairman of Board, 41medical AG · Former CTO Synthes Inc.",
+      image: "/real_bios/real_board_member_1.jpg"
+    },
+    { 
+      name: "Prof. Dr. med. MBA Benedikt Braun", 
+      role: "Managing Senior Physician, Reconstructive Surgery, BG Klinik Tübingen",
+      image: "/real_bios/real_board_member_2.jpg"
+    },
+    { 
+      name: "Dr. Bernd Grimm, PhD", 
+      role: "Group Leader Human Motion & Digital Methods, Luxembourg Institute of Health",
+      image: "/real_bios/real_board_member_3.jpg"
+    },
+    { 
+      name: "Prof. Dr. med. Michael Schütz", 
+      role: "Director Jamieson Trauma Institute · Former Director Charité Berlin",
+      image: "/real_bios/real_board_member_4.jpg"
+    },
+    { 
+      name: "Dr. Bernd Robioneck", 
+      role: "Former VP Global R&D Stryker Trauma & Extremities",
+      image: null
+    },
+    { 
+      name: "Prof. Kenneth A. Egol, MD", 
+      role: "Vice Chairman & Professor Orthopedic Trauma, NYU Langone Health",
+      image: null
+    }
   ];
 
   return (
-    <section id="about" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="about" className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white text-slate-900">
       
-      {/* Header (Slide from Top) */}
+      {/* Header */}
       <motion.div 
-        initial={{ opacity: 0, y: -40 }}
+        initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="text-center max-w-3xl mx-auto mb-10 sm:mb-12"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-center max-w-3xl mx-auto mb-16 sm:mb-20"
       >
-        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-blue-700 text-sm font-bold mb-3">
-          <TurbineLogo size={16} animate={true} />
-          <span>LEADERSHIP & ADVISORY</span>
-        </div>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
-          Founded in the Swiss Alps, <br />
-          <span className="text-blue-600">Built on Decades of Orthopedic Expertise</span>
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-[#0a2540] tracking-normal">
+          Leadership & <span className="font-semibold text-[#0284c7]">Advisory Board</span>
         </h2>
-        <p className="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto font-normal">
-          BIOS Medical AG is based in Davos, Switzerland. We combine world-class medical biomechanics with low-power sensor telemetry and machine learning to improve the human condition.
+        <p className="mt-4 text-lg sm:text-xl text-slate-600 font-light">
+          BIOS Medical AG · Davos, Switzerland
         </p>
       </motion.div>
 
-      {/* Leadership 3 Cards Grid: Member 1 from Left, Member 2 from Bottom, Member 3 from Right */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
-        {leadership.map((member, idx) => {
-          const initialDirection = idx === 0 ? { opacity: 0, x: -70 } : idx === 1 ? { opacity: 0, y: 70 } : { opacity: 0, x: 70 };
-
-          return (
-            <motion.div
-              key={idx}
-              initial={initialDirection}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.8, delay: idx * 0.15, ease: [0.16, 1, 0.3, 1] }}
-              whileHover={{ y: -6, scale: 1.02 }}
-              className="rounded-3xl bg-white border border-slate-200/80 p-6 sm:p-8 shadow-md hover:shadow-2xl hover:border-blue-300 transition-all flex flex-col justify-between group relative overflow-hidden"
-            >
-              <div>
-                <div className="relative mb-6">
-                  <div className="w-24 h-24 rounded-2xl overflow-hidden ring-4 ring-blue-50 shadow-md">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className={`absolute top-0 right-0 px-3 py-1 rounded-full text-xs font-bold shadow-2xs border ${
-                    idx % 2 === 0
-                      ? 'bg-blue-50 border-blue-200 text-blue-700'
-                      : 'bg-amber-50 border-amber-200 text-amber-700'
-                  }`}>
-                    {member.highlight}
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">{member.name}</h3>
-                <div className="text-sm font-bold text-blue-600 mb-1.5">{member.role}</div>
-                <div className="text-xs text-slate-500 mb-4 flex items-center gap-1.5 font-medium">
-                  <GraduationCap className={`w-4 h-4 ${idx % 2 === 0 ? 'text-blue-600' : 'text-amber-500'}`} />
-                  <span>{member.credentials}</span>
-                </div>
-
-                <p className="text-sm text-slate-600 leading-relaxed font-normal">
-                  {member.bio}
-                </p>
+      {/* Leadership 3 Cards Grid with Larger Readable Typography */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        {leadership.map((member, idx) => (
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: idx * 0.1 }}
+            className="rounded-3xl bg-white border border-slate-200 p-8 flex flex-col justify-between shadow-xs hover:border-[#0284c7] transition-colors"
+          >
+            <div>
+              <div className="w-24 h-24 rounded-2xl overflow-hidden mb-5 border border-slate-200 shadow-2xs">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
-            </motion.div>
-          );
-        })}
+
+              <h3 className="text-xl sm:text-2xl font-normal text-slate-900">{member.name}</h3>
+              <div className="text-sm sm:text-base font-medium text-[#0284c7] mt-0.5 mb-1">{member.role}</div>
+              <div className="text-xs sm:text-sm text-slate-400 font-light mb-4">{member.credentials}</div>
+
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-light">
+                {member.bio}
+              </p>
+            </div>
+          </motion.div>
+        ))}
       </div>
 
-      {/* Advisory Board Grid (Slide from Bottom) - Light Medical Theme */}
-      <motion.div 
-        initial={{ opacity: 0, y: 60 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-        className="rounded-3xl bg-gradient-to-br from-slate-50 via-white to-blue-50/40 p-8 sm:p-12 text-slate-900 border border-slate-200/90 shadow-xl relative overflow-hidden"
-      >
-        
-        {/* Background glow */}
-        <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-blue-400/10 blur-3xl pointer-events-none" />
+      {/* Advisory Board Grid */}
+      <div className="rounded-3xl border border-slate-200 p-8 sm:p-12 bg-slate-50/60">
+        <h3 className="text-2xl sm:text-3xl font-light text-[#0a2540] mb-8">
+          Scientific Advisory Board
+        </h3>
 
-        <div className="relative z-10 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <div className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-blue-700 bg-blue-50 px-3.5 py-1 rounded-full border border-blue-200/80 inline-block">
-              Global Clinical Guidance
-            </div>
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black font-heading tracking-tight text-slate-900 mt-2">
-              Scientific Advisory Board
-            </h3>
-          </div>
-          <div className="text-sm text-slate-600 font-medium max-w-sm">
-            Guiding clinical trials, regulatory compliance (MDR), and international hospital rollout.
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {advisors.map((advisor, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-xs hover:border-blue-400 hover:shadow-md transition-all group"
+              className="p-5 rounded-2xl bg-white border border-slate-200 flex items-start gap-4 shadow-2xs"
             >
-              <div className="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-1.5">{advisor.name}</div>
-              <div className="text-sm text-slate-600 leading-relaxed font-medium">{advisor.role}</div>
+              {advisor.image ? (
+                <div className="w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-slate-200">
+                  <img src={advisor.image} alt={advisor.name} className="w-full h-full object-cover" />
+                </div>
+              ) : (
+                <div className="w-12 h-12 rounded-xl bg-slate-100 text-slate-400 flex items-center justify-center shrink-0 text-sm font-semibold">
+                  {advisor.name.charAt(0)}
+                </div>
+              )}
+              <div>
+                <div className="text-base sm:text-lg font-normal text-slate-900 leading-snug mb-1">
+                  {advisor.name}
+                </div>
+                <div className="text-xs sm:text-sm text-slate-500 font-light leading-relaxed">
+                  {advisor.role}
+                </div>
+              </div>
             </div>
           ))}
         </div>
-
-      </motion.div>
+      </div>
 
     </section>
   );
 };
+
+export default AboutLeadership;

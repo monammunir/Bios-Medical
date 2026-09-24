@@ -17,14 +17,14 @@ export const FaqPage: React.FC = () => {
     >
       {/* Page Hero Header */}
       <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-bold tracking-wide uppercase mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-xs sm:text-sm font-bold tracking-wide uppercase mb-4">
           <TurbineLogo size={15} animate={true} />
           <span>CLINICAL & TECHNICAL KNOWLEDGE BASE</span>
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading text-slate-900 tracking-tight leading-tight">
           Frequently Asked Questions <br />
-          <span className="text-blue-600">& Technical Guidance</span>
+          <span className="text-[#0b3856]">& Technical Guidance</span>
         </h1>
 
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
@@ -38,7 +38,7 @@ export const FaqPage: React.FC = () => {
       {/* 2. Still have questions box */}
       <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
         <div className="p-8 rounded-3xl bg-white border border-slate-200/90 shadow-sm max-w-2xl mx-auto">
-          <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mx-auto mb-3">
+          <div className="w-12 h-12 rounded-2xl bg-[#4e87ba]/15 text-[#0b3856] flex items-center justify-center mx-auto mb-3">
             <MessageSquare className="w-6 h-6" />
           </div>
           <h3 className="text-xl font-bold text-slate-900">Have a Specific Surgical or Regulatory Question?</h3>
@@ -48,7 +48,7 @@ export const FaqPage: React.FC = () => {
           <div className="mt-4">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold shadow-md transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0b3856] hover:bg-[#0b3856]/90 text-white text-xs sm:text-sm font-bold shadow-md transition-all"
             >
               <span>Connect with Medical Affairs</span>
               <ArrowRight className="w-3.5 h-3.5" />

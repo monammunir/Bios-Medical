@@ -26,7 +26,7 @@ export const DetailPage: React.FC = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-2">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-500 hover:text-blue-600 transition-colors"
+          className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-500 hover:text-[#0b3856] transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back to Overview</span>
@@ -35,12 +35,12 @@ export const DetailPage: React.FC = () => {
 
       {/* Main Page Header */}
       <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-blue-600 via-blue-600 to-indigo-700 text-white shadow-xl relative overflow-hidden">
+        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#0b3856] via-[#0b3856] to-[#4e87ba] text-white shadow-xl relative overflow-hidden">
           <div className="flex items-center gap-2.5 mb-4 flex-wrap">
             <span className="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/20 text-white border border-white/30">
               {content.category}
             </span>
-            <span className="px-3.5 py-1 rounded-full text-xs font-black tracking-wide bg-amber-400 text-slate-900 shadow-xs">
+            <span className="px-3.5 py-1 rounded-full text-xs font-black tracking-wide bg-[#4e87ba] text-white shadow-xs">
               {content.badge}
             </span>
           </div>
@@ -49,7 +49,7 @@ export const DetailPage: React.FC = () => {
             {content.title}
           </h1>
 
-          <p className="text-base sm:text-lg text-blue-100 font-medium mt-3 leading-relaxed max-w-3xl">
+          <p className="text-base sm:text-lg text-white/80 font-medium mt-3 leading-relaxed max-w-3xl">
             {content.subtitle}
           </p>
         </div>
@@ -59,7 +59,7 @@ export const DetailPage: React.FC = () => {
       <section className="py-4 pb-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto space-y-8">
         {/* Summary Card */}
         <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-sm">
-          <h2 className="text-sm font-black uppercase tracking-wider text-blue-700 mb-2">
+          <h2 className="text-sm font-black uppercase tracking-wider text-[#0b3856] mb-2">
             Clinical Overview
           </h2>
           <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
@@ -77,7 +77,7 @@ export const DetailPage: React.FC = () => {
               {content.clinicalMetrics.map((m, idx) => (
                 <div key={idx} className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs">
                   <div className="text-xs text-slate-500 font-semibold">{m.label}</div>
-                  <div className="text-2xl sm:text-3xl font-black text-blue-600 font-heading mt-1">{m.value}</div>
+                  <div className="text-2xl sm:text-3xl font-black text-[#0b3856] font-heading mt-1">{m.value}</div>
                   <div className="text-xs font-medium text-slate-600 mt-1">{m.change}</div>
                 </div>
               ))}
@@ -93,8 +93,8 @@ export const DetailPage: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {content.keyPoints.map((kp, idx) => (
               <div key={idx} className="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-200/70">
-                <div className="w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-blue-600" />
+                <div className="w-7 h-7 rounded-full bg-[#4e87ba]/15 text-[#0b3856] flex items-center justify-center shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-[#4e87ba]" />
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-slate-900">{kp.title}</h4>
@@ -107,21 +107,21 @@ export const DetailPage: React.FC = () => {
 
         {/* Regulatory Note */}
         {content.regulatoryNote && (
-          <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm leading-relaxed flex items-start gap-3">
-            <Shield className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+          <div className="p-5 rounded-2xl bg-[#4e87ba]/10 border border-[#4e87ba]/25 text-[#0b3856] text-xs sm:text-sm leading-relaxed flex items-start gap-3">
+            <Shield className="w-5 h-5 text-[#4e87ba] shrink-0 mt-0.5" />
             <span>{content.regulatoryNote}</span>
           </div>
         )}
 
         {/* Bottom Contact CTA */}
-        <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-blue-50/80 via-white to-sky-50/50 border border-blue-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#4e87ba]/10 via-white to-[#0b3856]/5 border border-[#4e87ba]/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <h4 className="text-lg font-bold text-slate-900">Interested in {content.title}?</h4>
             <p className="text-xs sm:text-sm text-slate-600">Request clinical specifications or trial participation.</p>
           </div>
           <Link
             to="/contact"
-            className="px-7 py-3.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm flex items-center gap-2 shadow-md transition-all shrink-0"
+            className="px-7 py-3.5 rounded-full bg-[#0b3856] hover:bg-[#0b3856]/90 text-white font-bold text-sm flex items-center gap-2 shadow-md transition-all shrink-0"
           >
             <span>Request Consultation</span>
             <ArrowRight className="w-4 h-4" />

@@ -58,14 +58,14 @@ export const ConsultationForm: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-bold tracking-wide uppercase shadow-2xs mb-4">
-            <Shield className="w-4 h-4 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-xs sm:text-sm font-bold tracking-wide uppercase shadow-2xs mb-4">
+            <Shield className="w-4 h-4 text-[#4e87ba]" />
             <span>Clinical Trial & Institutional Access</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-slate-900 tracking-tight leading-tight">
             Request A Clinical Consultation <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0b3856] to-[#4e87ba]">
               Or Hospital Ward Deployment
             </span>
           </h2>
@@ -90,12 +90,12 @@ export const ConsultationForm: React.FC = () => {
                   exit={{ opacity: 0, scale: 0.95 }}
                   className="py-12 px-4 text-center space-y-6"
                 >
-                  <div className="w-16 h-16 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mx-auto border-2 border-blue-200 shadow-lg">
-                    <CheckCircle className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 rounded-full bg-[#4e87ba]/15 text-[#0b3856] flex items-center justify-center mx-auto border-2 border-[#4e87ba]/30 shadow-lg">
+                    <CheckCircle className="w-8 h-8 text-[#0b3856]" />
                   </div>
 
                   <div>
-                    <span className="inline-block px-3.5 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-xs font-bold uppercase tracking-wider mb-2">
+                    <span className="inline-block px-3.5 py-1 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-xs font-bold uppercase tracking-wider mb-2">
                       Inquiry Dispatched · {referenceId}
                     </span>
                     <h3 className="text-2xl sm:text-3xl font-black font-heading text-slate-900">
@@ -109,7 +109,7 @@ export const ConsultationForm: React.FC = () => {
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 max-w-md mx-auto text-xs sm:text-sm text-slate-700 space-y-2 text-left">
                     <div className="flex justify-between">
                       <span className="text-slate-500">Official Reference:</span>
-                      <span className="font-bold text-blue-600">{referenceId}</span>
+                      <span className="font-bold text-[#0b3856]">{referenceId}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-500">Institutional Email:</span>
@@ -121,7 +121,7 @@ export const ConsultationForm: React.FC = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-500">Expected Response:</span>
-                      <span className="font-semibold text-amber-600">Within 24 Business Hours</span>
+                      <span className="font-semibold text-[#4e87ba]">Within 24 Business Hours</span>
                     </div>
                   </div>
 
@@ -144,8 +144,8 @@ export const ConsultationForm: React.FC = () => {
                   className="space-y-6"
                 >
                   {/* Top Note */}
-                  <div className="flex items-center gap-2 p-3.5 rounded-2xl bg-blue-50/70 border border-blue-100 text-blue-900 text-xs sm:text-sm font-medium">
-                    <Activity className="w-4 h-4 text-blue-600 shrink-0" />
+                  <div className="flex items-center gap-2 p-3.5 rounded-2xl bg-[#4e87ba]/10 border border-[#4e87ba]/20 text-[#0b3856] text-xs sm:text-sm font-medium">
+                    <Activity className="w-4 h-4 text-[#4e87ba] shrink-0" />
                     <span>Dedicated direct channel for hospital chiefs, trauma surgeons, and clinical researchers.</span>
                   </div>
 
@@ -153,10 +153,10 @@ export const ConsultationForm: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                        Full Name & Title <span className="text-blue-600">*</span>
+                        Full Name & Title <span className="text-[#0b3856]">*</span>
                       </label>
                       <div className="relative">
-                        <User className="w-4 h-4 text-blue-600 absolute left-3.5 top-3.5 pointer-events-none" />
+                        <User className="w-4 h-4 text-[#4e87ba] absolute left-3.5 top-3.5 pointer-events-none" />
                         <input
                           type="text"
                           name="fullName"
@@ -164,17 +164,17 @@ export const ConsultationForm: React.FC = () => {
                           value={formData.fullName}
                           onChange={handleChange}
                           placeholder="Prof. / Dr. / First Last"
-                          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-blue-600 focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
+                          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#0b3856] focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
                         />
                       </div>
                     </div>
 
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                        Institutional Email <span className="text-blue-600">*</span>
+                        Institutional Email <span className="text-[#0b3856]">*</span>
                       </label>
                       <div className="relative">
-                        <Mail className="w-4 h-4 text-blue-600 absolute left-3.5 top-3.5 pointer-events-none" />
+                        <Mail className="w-4 h-4 text-[#4e87ba] absolute left-3.5 top-3.5 pointer-events-none" />
                         <input
                           type="email"
                           name="workEmail"
@@ -182,7 +182,7 @@ export const ConsultationForm: React.FC = () => {
                           value={formData.workEmail}
                           onChange={handleChange}
                           placeholder="doctor@hospital.org"
-                          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-blue-600 focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
+                          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#0b3856] focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
                         />
                       </div>
                     </div>
@@ -192,10 +192,10 @@ export const ConsultationForm: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                        Hospital / Health System <span className="text-blue-600">*</span>
+                        Hospital / Health System <span className="text-[#0b3856]">*</span>
                       </label>
                       <div className="relative">
-                        <Building2 className="w-4 h-4 text-blue-600 absolute left-3.5 top-3.5 pointer-events-none" />
+                        <Building2 className="w-4 h-4 text-[#4e87ba] absolute left-3.5 top-3.5 pointer-events-none" />
                         <input
                           type="text"
                           name="institution"
@@ -203,7 +203,7 @@ export const ConsultationForm: React.FC = () => {
                           value={formData.institution}
                           onChange={handleChange}
                           placeholder="e.g. Zurich University Hospital"
-                          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-blue-600 focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
+                          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#0b3856] focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
                         />
                       </div>
                     </div>
@@ -213,14 +213,14 @@ export const ConsultationForm: React.FC = () => {
                         Phone / Direct Line (Optional)
                       </label>
                       <div className="relative">
-                        <Phone className="w-4 h-4 text-blue-600 absolute left-3.5 top-3.5 pointer-events-none" />
+                        <Phone className="w-4 h-4 text-[#4e87ba] absolute left-3.5 top-3.5 pointer-events-none" />
                         <input
                           type="tel"
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
                           placeholder="+41 ... / +1 ..."
-                          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-blue-600 focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
+                          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#0b3856] focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
                         />
                       </div>
                     </div>
@@ -236,7 +236,7 @@ export const ConsultationForm: React.FC = () => {
                         name="role"
                         value={formData.role}
                         onChange={handleChange}
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-blue-600 focus:outline-none text-sm text-slate-900 transition-colors shadow-2xs"
+                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#0b3856] focus:outline-none text-sm text-slate-900 transition-colors shadow-2xs"
                       >
                         <option value="Chief of Orthopedic Surgery">Chief of Orthopedic Surgery</option>
                         <option value="Orthopedic Trauma Surgeon">Orthopedic Trauma Surgeon</option>
@@ -256,7 +256,7 @@ export const ConsultationForm: React.FC = () => {
                         name="interest"
                         value={formData.interest}
                         onChange={handleChange}
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-blue-600 focus:outline-none text-sm text-slate-900 transition-colors shadow-2xs"
+                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#0b3856] focus:outline-none text-sm text-slate-900 transition-colors shadow-2xs"
                       >
                         <option value="HIPbeacon™ Active Sensor Pilot">HIPbeacon™ Active Sensor Pilot</option>
                         <option value="BIOS-Cloud DMO Analytics Demo">BIOS-Cloud DMO Analytics Demo</option>
@@ -277,7 +277,7 @@ export const ConsultationForm: React.FC = () => {
                       name="patientVolume"
                       value={formData.patientVolume}
                       onChange={handleChange}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-blue-600 focus:outline-none text-sm text-slate-900 transition-colors shadow-2xs"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#0b3856] focus:outline-none text-sm text-slate-900 transition-colors shadow-2xs"
                     >
                       <option value="< 100 Hip Fractures / Year">&lt; 100 Fragility Hip Fractures / Year</option>
                       <option value="100 - 300 Hip Fractures / Year">100 – 300 Fragility Hip Fractures / Year (Regional Hospital)</option>
@@ -297,21 +297,21 @@ export const ConsultationForm: React.FC = () => {
                       value={formData.clinicalNotes}
                       onChange={handleChange}
                       placeholder="Specify your surgical implants used (e.g. CMN, DHS), current mobilization protocols, or research objectives..."
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-blue-600 focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#0b3856] focus:outline-none text-sm text-slate-900 placeholder-slate-400 transition-colors shadow-2xs"
                     />
                   </div>
 
                   {/* Submit Button */}
                   <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <div className="text-xs text-slate-500 flex items-center gap-1.5">
-                      <Shield className="w-3.5 h-3.5 text-blue-600" />
+                      <Shield className="w-3.5 h-3.5 text-[#4e87ba]" />
                       <span>Compliant with Swiss FADP & EU GDPR. Institutional NDAs available.</span>
                     </div>
 
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                      className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#0b3856] hover:bg-[#0b3856]/90 disabled:bg-[#0b3856]/50 text-white text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-all cursor-pointer"
                     >
                       {isSubmitting ? (
                         <>
@@ -338,8 +338,8 @@ export const ConsultationForm: React.FC = () => {
             {/* Swiss HQ Card */}
             <div className="p-6 sm:p-7 rounded-3xl bg-white border border-slate-200/90 shadow-lg space-y-5">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600">
-                  <MapPin className="w-5 h-5 text-blue-600" />
+                <div className="w-10 h-10 rounded-2xl bg-[#4e87ba]/15 border border-[#4e87ba]/30 flex items-center justify-center text-[#0b3856]">
+                  <MapPin className="w-5 h-5 text-[#0b3856]" />
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-slate-900">Swiss Headquarters</h4>
@@ -355,14 +355,14 @@ export const ConsultationForm: React.FC = () => {
 
                 <div className="flex items-center justify-between py-1 border-b border-slate-100">
                   <span className="text-slate-500">Direct Telephone:</span>
-                  <a href="tel:+41814148000" className="font-bold text-blue-600 hover:underline">
+                  <a href="tel:+41814148000" className="font-bold text-[#0b3856] hover:underline">
                     +41 81 414 80 00
                   </a>
                 </div>
 
                 <div className="flex items-center justify-between py-1 border-b border-slate-100">
                   <span className="text-slate-500">Clinical Affairs:</span>
-                  <a href="mailto:clinical@biosmedical.care" className="font-bold text-blue-600 hover:underline">
+                  <a href="mailto:clinical@biosmedical.care" className="font-bold text-[#0b3856] hover:underline">
                     clinical@biosmedical.care
                   </a>
                 </div>
@@ -375,19 +375,19 @@ export const ConsultationForm: React.FC = () => {
 
               {/* Swiss Medtech & Quality Badges */}
               <div className="pt-3 border-t border-slate-100 grid grid-cols-2 gap-2 text-center text-xs">
-                <div className="p-2.5 rounded-xl bg-blue-50/70 border border-blue-100 font-bold text-blue-800">
+                <div className="p-2.5 rounded-xl bg-[#0b3856]/10 border border-[#0b3856]/20 font-bold text-[#0b3856]">
                   ISO 13485:2016
                 </div>
-                <div className="p-2.5 rounded-xl bg-amber-50/70 border border-amber-100 font-bold text-amber-800">
+                <div className="p-2.5 rounded-xl bg-[#4e87ba]/15 border border-[#4e87ba]/30 font-bold text-[#0b3856]">
                   Swiss Medtech AG
                 </div>
               </div>
             </div>
 
             {/* Fast Turnaround Card - Light Medical Theme */}
-            <div className="p-6 rounded-3xl bg-gradient-to-br from-blue-50/90 via-white to-sky-50/60 border border-blue-200/90 shadow-lg space-y-4">
-              <div className="flex items-center gap-2 text-amber-700 text-xs font-black uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200/80 w-fit">
-                <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+            <div className="p-6 rounded-3xl bg-gradient-to-br from-[#4e87ba]/10 via-white to-[#0b3856]/5 border border-[#4e87ba]/30 shadow-lg space-y-4">
+              <div className="flex items-center gap-2 text-[#0b3856] text-xs font-black uppercase tracking-wider bg-[#4e87ba]/15 px-3 py-1 rounded-full border border-[#4e87ba]/30 w-fit">
+                <Sparkles className="w-3.5 h-3.5 text-[#4e87ba]" />
                 <span>Rapid Clinical Response</span>
               </div>
               <h4 className="text-lg font-bold font-heading text-slate-900 leading-snug">
@@ -399,7 +399,7 @@ export const ConsultationForm: React.FC = () => {
               <div className="pt-1">
                 <a
                   href="mailto:trials@biosmedical.care?subject=Immediate%20Trauma%20Protocol%20Review"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all shadow-sm group"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0b3856] hover:bg-[#0b3856]/90 text-white text-xs font-bold transition-all shadow-sm group"
                 >
                   <span>Email Priority Desk</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

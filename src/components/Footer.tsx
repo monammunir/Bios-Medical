@@ -43,7 +43,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPage }) => {
             {/* Transparent Logo without any background card */}
             <Link to="/" className="flex items-center">
               <img 
-                src="/bios_logo_new.png" 
+                src="/bios_logo_clean.png" 
                 alt="BIOS Medical - Restore Life" 
                 className="h-10 sm:h-12 w-auto object-contain"
               />
@@ -55,8 +55,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPage }) => {
 
             {/* Newsletter Input Form */}
             {subscribed ? (
-              <div className="p-3.5 rounded-full bg-blue-50 border border-blue-200 text-blue-900 text-xs sm:text-sm font-bold flex items-center gap-2.5 max-w-md">
-                <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
+              <div className="p-3.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-xs sm:text-sm font-bold flex items-center gap-2.5 max-w-md">
+                <CheckCircle2 className="w-4 h-4 text-[#0b3856] shrink-0" />
                 <span>Thank you! You are subscribed to BIOS Medical updates.</span>
               </div>
             ) : (
@@ -67,11 +67,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPage }) => {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your clinical email..."
                   required
-                  className="w-full pl-4 pr-32 py-3 rounded-full bg-slate-50 border border-slate-200/90 focus:outline-none focus:border-blue-500 text-sm text-slate-800 placeholder-slate-400 transition-colors shadow-2xs"
+                  className="w-full pl-4 pr-32 py-3 rounded-full bg-slate-50 border border-slate-200/90 focus:outline-none focus:border-[#4e87ba] text-sm text-slate-800 placeholder-slate-400 transition-colors shadow-2xs"
                 />
                 <button
                   type="submit"
-                  className="absolute right-1 px-5 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer"
+                  className="absolute right-1 px-5 py-2 rounded-full bg-[#0b3856] hover:bg-[#0b3856]/90 text-white text-xs sm:text-sm font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer"
                 >
                   <span>Subscribe</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -81,10 +81,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPage }) => {
 
             {/* Swiss Headquarters */}
             <div className="text-xs sm:text-sm text-slate-600 flex items-center gap-2 pt-1">
-              <MapPin className="w-4 h-4 text-blue-600 shrink-0" />
+              <MapPin className="w-4 h-4 text-[#4e87ba] shrink-0" />
               <Link 
                 to="/about"
-                className="font-semibold text-slate-800 hover:text-blue-600 transition-colors text-left"
+                className="font-semibold text-slate-800 hover:text-[#4e87ba] transition-colors text-left"
               >
                 BIOS Medical AG
               </Link>
@@ -103,22 +103,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPage }) => {
               </h4>
               <ul className="space-y-2.5 text-slate-600 font-medium text-xs sm:text-sm">
                 <li>
-                  <Link to="/page/hipbeacon" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/hipbeacon" className="hover:text-[#4e87ba] transition-colors text-left block">
                     HIPbeacon™ Sensor
                   </Link>
                 </li>
                 <li>
-                  <Link to="/page/bios-cloud" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/bios-cloud" className="hover:text-[#4e87ba] transition-colors text-left block">
                     BIOS-Cloud Login
                   </Link>
                 </li>
                 <li>
-                  <Link to="/page/dmo-analytics" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/dmo-analytics" className="hover:text-[#4e87ba] transition-colors text-left block">
                     DMO Analytics
                   </Link>
                 </li>
                 <li>
-                  <Link to="/page/rf-gateway" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/rf-gateway" className="hover:text-[#4e87ba] transition-colors text-left block">
                     Bedside RF Gateway
                   </Link>
                 </li>
@@ -132,22 +132,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPage }) => {
               </h4>
               <ul className="space-y-2.5 text-slate-600 font-medium text-xs sm:text-sm">
                 <li>
-                  <Link to="/page/orthopedic-trauma" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/orthopedic-trauma" className="hover:text-[#4e87ba] transition-colors text-left block">
                     Orthopedic Trauma
                   </Link>
                 </li>
                 <li>
-                  <Link to="/page/geriatric-care" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/geriatric-care" className="hover:text-[#4e87ba] transition-colors text-left block">
                     Geriatric Care
                   </Link>
                 </li>
                 <li>
-                  <Link to="/why-choose" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/why-choose" className="hover:text-[#4e87ba] transition-colors text-left block">
                     22% Mortality Protocol
                   </Link>
                 </li>
                 <li>
-                  <Link to="/page/hospital-wards" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/hospital-wards" className="hover:text-[#4e87ba] transition-colors text-left block">
                     Hospital Wards
                   </Link>
                 </li>
@@ -161,22 +161,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPage }) => {
               </h4>
               <ul className="space-y-2.5 text-slate-600 font-medium text-xs sm:text-sm">
                 <li>
-                  <Link to="/page/ao-studies" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/ao-studies" className="hover:text-[#4e87ba] transition-colors text-left block">
                     AO Research Studies
                   </Link>
                 </li>
                 <li>
-                  <Link to="/page/mobilise-d" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/mobilise-d" className="hover:text-[#4e87ba] transition-colors text-left block">
                     Mobilise-D Registry
                   </Link>
                 </li>
                 <li>
-                  <Link to="/evidence" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/evidence" className="hover:text-[#4e87ba] transition-colors text-left block">
                     Clinical Publications
                   </Link>
                 </li>
                 <li>
-                  <Link to="/page/ce-mark" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/ce-mark" className="hover:text-[#4e87ba] transition-colors text-left block">
                     CE-Mark Roadmap
                   </Link>
                 </li>
@@ -190,22 +190,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPage }) => {
               </h4>
               <ul className="space-y-2.5 text-slate-600 font-medium text-xs sm:text-sm">
                 <li>
-                  <Link to="/about" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/about" className="hover:text-[#4e87ba] transition-colors text-left block">
                     About BIOS
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/about" className="hover:text-[#4e87ba] transition-colors text-left block">
                     Leadership & Team
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/about" className="hover:text-[#4e87ba] transition-colors text-left block">
                     Advisory Board
                   </Link>
                 </li>
                 <li>
-                  <Link to="/page/privacy" className="hover:text-blue-600 transition-colors text-left block">
+                  <Link to="/page/privacy" className="hover:text-[#4e87ba] transition-colors text-left block">
                     Privacy Policy
                   </Link>
                 </li>
@@ -222,22 +222,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPage }) => {
             © {new Date().getFullYear()} BIOS Medical AG. All rights reserved. Registered in Switzerland (
             <Link 
               to="/page/impressum"
-              className="text-blue-600 hover:underline"
+              className="text-[#0b3856] hover:underline"
             >
               CHE-371.993.848
             </Link>
             ).
           </div>
           <div className="flex items-center gap-5 text-slate-500">
-            <Link to="/page/privacy" className="hover:text-blue-600 transition-colors">
+            <Link to="/page/privacy" className="hover:text-[#4e87ba] transition-colors">
               Privacy Policy
             </Link>
             <span>·</span>
-            <Link to="/page/terms" className="hover:text-blue-600 transition-colors">
+            <Link to="/page/terms" className="hover:text-[#4e87ba] transition-colors">
               Terms of Service
             </Link>
             <span>·</span>
-            <a href="https://bios.mdeg.cloud/login" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+            <a href="https://bios.mdeg.cloud/login" target="_blank" rel="noopener noreferrer" className="hover:text-[#4e87ba] transition-colors">
               BIOS-Cloud Portal
             </a>
           </div>

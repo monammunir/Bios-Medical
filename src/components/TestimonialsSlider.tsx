@@ -83,18 +83,20 @@ export const TestimonialsSlider: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="text-center max-w-2xl mx-auto mb-10 sm:mb-12"
+        className="text-center max-w-3xl mx-auto mb-10 sm:mb-12"
       >
-        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-blue-700 text-sm font-bold mb-3">
+        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-xs sm:text-sm font-bold tracking-wide uppercase mb-3 shadow-2xs">
           <TurbineLogo size={16} animate={true} />
-          <span>CLINICAL TESTIMONIALS</span>
+          <span>SCIENTIFIC VOICES & CLINICAL PERSPECTIVES</span>
         </div>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-slate-900">
-          Clinicians & Patients <br />
-          <span className="text-blue-600">Trust BIOS Medical</span>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-slate-900 leading-tight">
+          Scientific Leadership & <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0b3856] via-[#1a689a] to-[#4e87ba]">
+            Clinical Perspectives
+          </span>
         </h2>
-        <p className="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-xl mx-auto">
-          World-renowned orthopedic trauma surgeons and rehabilitation pioneers share how continuous implanted mobility data improves recovery.
+        <p className="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-xl mx-auto font-normal">
+          Orthopedic trauma pioneers and biomechanical researchers share why in-vivo objective telemetry is the key to reducing post-operative mortality.
         </p>
       </motion.div>
 
@@ -128,16 +130,16 @@ export const TestimonialsSlider: React.FC = () => {
             </AnimatePresence>
           </div>
 
-          {/* Stepper / Pagination Bar with solid blue chevron buttons */}
+          {/* Stepper / Pagination Bar */}
           <div className="mt-4 flex items-center justify-between w-56 sm:w-60 px-4 py-3 rounded-full bg-white border border-slate-200/90 shadow-xs">
             <motion.button
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.9 }}
               onClick={handlePrev}
-              className="p-1.5 rounded-full hover:bg-blue-50 text-blue-600 transition-colors cursor-pointer"
+              className="p-1.5 rounded-full hover:bg-[#4e87ba]/10 text-[#0b3856] transition-colors cursor-pointer"
               aria-label="Previous Testimonial"
             >
-              <ChevronLeft className="w-5 h-5 text-blue-600" />
+              <ChevronLeft className="w-5 h-5 text-[#0b3856]" />
             </motion.button>
 
             <div className="flex items-center gap-2">
@@ -145,7 +147,7 @@ export const TestimonialsSlider: React.FC = () => {
                 {currentIndex + 1} / {testimonials.length}
               </span>
               {!isPaused && (
-                <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" title="Auto-playing" />
+                <span className="w-2 h-2 rounded-full bg-[#4e87ba] animate-pulse" title="Auto-playing" />
               )}
             </div>
 
@@ -153,10 +155,10 @@ export const TestimonialsSlider: React.FC = () => {
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.9 }}
               onClick={handleNext}
-              className="p-1.5 rounded-full hover:bg-blue-50 text-blue-600 transition-colors cursor-pointer"
+              className="p-1.5 rounded-full hover:bg-[#4e87ba]/10 text-[#0b3856] transition-colors cursor-pointer"
               aria-label="Next Testimonial"
             >
-              <ChevronRight className="w-5 h-5 text-blue-600" />
+              <ChevronRight className="w-5 h-5 text-[#0b3856]" />
             </motion.button>
           </div>
         </motion.div>
@@ -169,13 +171,16 @@ export const TestimonialsSlider: React.FC = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="md:col-span-8"
         >
-          <div className="rounded-3xl bg-white border border-slate-200/90 p-7 sm:p-10 shadow-xl shadow-blue-900/5 relative overflow-hidden">
+          <div className="rounded-3xl bg-white border border-slate-200/90 p-7 sm:p-10 shadow-xl shadow-[#0b3856]/5 relative overflow-hidden">
             
-            {/* Top 5 Star Rating (Solid Yellow) */}
-            <div className="flex items-center gap-1.5 text-amber-400 mb-6">
-              {[...Array(current.rating)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-amber-400 stroke-amber-400" />
-              ))}
+            {/* Top Clinical Statement Badge */}
+            <div className="flex items-center gap-2 mb-6">
+              <div className="w-8 h-8 rounded-full bg-[#4e87ba]/15 text-[#0b3856] flex items-center justify-center shrink-0">
+                <Quote className="w-4 h-4 text-[#4e87ba]" />
+              </div>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#1a689a]">
+                PEER-REVIEWED CLINICAL STATEMENT
+              </span>
             </div>
 
             {/* Testimonial Quote with Slide transition */}
@@ -197,7 +202,7 @@ export const TestimonialsSlider: React.FC = () => {
                     <img
                       src={current.avatar}
                       alt={current.name}
-                      className="w-13 h-13 rounded-full object-cover ring-2 ring-blue-100 shadow-xs"
+                      className="w-13 h-13 rounded-full object-cover ring-2 ring-[#4e87ba]/20 shadow-xs"
                     />
                     <div>
                       <h4 className="text-sm sm:text-base font-bold text-slate-900">{current.name}</h4>
@@ -206,8 +211,8 @@ export const TestimonialsSlider: React.FC = () => {
                   </div>
 
                   {/* Stylized Quotation Mark */}
-                  <div className="text-blue-500/20">
-                    <Quote className="w-10 h-10 rotate-180 text-blue-600/30" />
+                  <div className="text-[#0b3856]/20">
+                    <Quote className="w-10 h-10 rotate-180 text-[#0b3856]/30" />
                   </div>
                 </div>
               </motion.div>

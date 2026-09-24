@@ -17,8 +17,8 @@ export const PartnersGrid: React.FC = () => {
       sub: 'Davos · Switzerland',
       badge: 'TRAUMA LEAD',
       short: 'AO',
-      iconColor: 'bg-blue-600 text-white',
-      badgeColor: 'bg-blue-50 text-blue-700 border-blue-200',
+      iconColor: 'bg-[#0b3856] text-white',
+      badgeColor: 'bg-[#4e87ba]/15 text-[#0b3856] border-[#4e87ba]/30',
     },
     {
       type: 'logo',
@@ -26,8 +26,8 @@ export const PartnersGrid: React.FC = () => {
       sub: 'Bern · Switzerland',
       badge: 'NATIONAL ASSOCIATION',
       short: '+CH',
-      iconColor: 'bg-amber-500 text-white',
-      badgeColor: 'bg-amber-50 text-amber-700 border-amber-200',
+      iconColor: 'bg-[#4e87ba] text-white',
+      badgeColor: 'bg-[#4e87ba]/15 text-[#0b3856] border-[#4e87ba]/30',
     },
     {
       type: 'dark',
@@ -41,8 +41,8 @@ export const PartnersGrid: React.FC = () => {
       sub: 'Department of Orthopedic Surgery',
       badge: 'NEW YORK, USA',
       short: 'NYU',
-      iconColor: 'bg-blue-600 text-white',
-      badgeColor: 'bg-blue-50 text-blue-700 border-blue-200',
+      iconColor: 'bg-[#0b3856] text-white',
+      badgeColor: 'bg-[#4e87ba]/15 text-[#0b3856] border-[#4e87ba]/30',
     },
     {
       type: 'logo',
@@ -50,8 +50,8 @@ export const PartnersGrid: React.FC = () => {
       sub: 'Reconstructive Surgery',
       badge: 'LEVEL 1 TRAUMA',
       short: 'BG',
-      iconColor: 'bg-amber-500 text-white',
-      badgeColor: 'bg-amber-50 text-amber-700 border-amber-200',
+      iconColor: 'bg-[#4e87ba] text-white',
+      badgeColor: 'bg-[#4e87ba]/15 text-[#0b3856] border-[#4e87ba]/30',
     },
     {
       type: 'logo',
@@ -59,8 +59,8 @@ export const PartnersGrid: React.FC = () => {
       sub: 'Swiss Innovation Agency · Bern',
       badge: 'FEDERAL AGENCY',
       short: '+CH',
-      iconColor: 'bg-blue-600 text-white',
-      badgeColor: 'bg-blue-50 text-blue-700 border-blue-200',
+      iconColor: 'bg-[#0b3856] text-white',
+      badgeColor: 'bg-[#4e87ba]/15 text-[#0b3856] border-[#4e87ba]/30',
     },
     {
       type: 'image',
@@ -75,8 +75,8 @@ export const PartnersGrid: React.FC = () => {
       sub: 'Alpine High-Altitude Tech Hub',
       badge: 'INCUBATION',
       short: 'ICD',
-      iconColor: 'bg-amber-500 text-white',
-      badgeColor: 'bg-amber-50 text-amber-700 border-amber-200',
+      iconColor: 'bg-[#4e87ba] text-white',
+      badgeColor: 'bg-[#4e87ba]/15 text-[#0b3856] border-[#4e87ba]/30',
     }
   ];
 
@@ -96,7 +96,7 @@ export const PartnersGrid: React.FC = () => {
       >
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-heading tracking-tight text-slate-900 leading-tight">
           Healthcare Providers & <br />
-          <span className="text-blue-600">Research Institutes</span>
+          <span className="text-[#0b3856]">Research Institutes</span>
         </h2>
         <p className="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto font-normal">
           BIOS Medical is developed in the Swiss Alps, partnering with world-renowned trauma institutes, university clinics, and healthcare leaders to advance post-fracture recovery.
@@ -131,7 +131,7 @@ export const PartnersGrid: React.FC = () => {
             >
               {card.type === 'dark' ? (
                 /* Connected Care Card matching theme */
-                <div className="w-68 sm:w-76 h-56 sm:h-60 rounded-[28px] overflow-hidden shadow-md border border-slate-200/90 relative group cursor-pointer bg-white flex flex-col justify-end p-6 hover:shadow-xl hover:border-blue-300 transition-all">
+                <div className="w-68 sm:w-76 h-56 sm:h-60 rounded-[28px] overflow-hidden shadow-md border border-slate-200/90 relative group cursor-pointer bg-white flex flex-col justify-end p-6 hover:shadow-xl hover:border-[#4e87ba]/50 transition-all">
                   <img
                     src={card.image}
                     alt={card.title}
@@ -145,8 +145,8 @@ export const PartnersGrid: React.FC = () => {
                   </div>
 
                   <div className="relative z-10">
-                    <span className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
-                      <MapPin className="w-3.5 h-3.5 text-amber-400" />
+                    <span className="text-xs font-bold text-[#4e87ba] uppercase tracking-wider flex items-center gap-1.5">
+                      <MapPin className="w-3.5 h-3.5 text-[#4e87ba]" />
                       {card.tag}
                     </span>
                     <h4 className="text-base sm:text-lg font-black text-white tracking-wide mt-1">
@@ -163,8 +163,8 @@ export const PartnersGrid: React.FC = () => {
                     className="w-full h-full object-cover group-hover:scale-106 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent flex flex-col justify-end p-6">
-                    <span className="text-xs font-bold text-blue-300 uppercase tracking-wider flex items-center gap-1.5">
-                      <MapPin className="w-3.5 h-3.5 text-blue-400" />
+                    <span className="text-xs font-bold text-[#4e87ba] uppercase tracking-wider flex items-center gap-1.5">
+                      <MapPin className="w-3.5 h-3.5 text-[#4e87ba]" />
                       {card.tag}
                     </span>
                     <h4 className="text-sm sm:text-base font-bold text-white tracking-wide mt-0.5">
@@ -174,7 +174,7 @@ export const PartnersGrid: React.FC = () => {
                 </div>
               ) : (
                 /* Partner Logo Box Card (Exact match to Screenshot) */
-                <div className="w-68 sm:w-76 h-56 sm:h-60 rounded-[28px] bg-white p-6 sm:p-7 border border-slate-200/90 shadow-sm flex flex-col justify-between hover:shadow-xl hover:border-blue-300 transition-all cursor-pointer group">
+                <div className="w-68 sm:w-76 h-56 sm:h-60 rounded-[28px] bg-white p-6 sm:p-7 border border-slate-200/90 shadow-sm flex flex-col justify-between hover:shadow-xl hover:border-[#4e87ba]/50 transition-all cursor-pointer group">
                   <div className="flex items-center justify-between">
                     <div className={`w-11 h-11 rounded-xl ${card.iconColor} flex items-center justify-center font-black text-sm shadow-xs`}>
                       {card.short}
@@ -185,7 +185,7 @@ export const PartnersGrid: React.FC = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-extrabold text-slate-900 text-base group-hover:text-blue-600 transition-colors">
+                    <h4 className="font-extrabold text-slate-900 text-base group-hover:text-[#0b3856] transition-colors">
                       {card.name}
                     </h4>
                     <p className="text-xs sm:text-sm text-slate-500 mt-1 leading-snug">

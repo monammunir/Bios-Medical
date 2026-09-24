@@ -18,7 +18,7 @@ export const StickyStepper: React.FC = () => {
         "Instant Identification of Immobility Regressions"
       ],
       image: "/real_bios/hipbeacon_implant_sensor.png",
-      pillColor: "bg-blue-600 text-white",
+      pillColor: "bg-[#0b3856] text-white",
       floatingTag: "Direct Implant Telemetry",
       floatingStat: "Day 1 Post-Op Active"
     },
@@ -33,7 +33,7 @@ export const StickyStepper: React.FC = () => {
         "Elimination of Costly Emergency Re-admissions"
       ],
       image: "/real_bios/clinical_team_review.jpg",
-      pillColor: "bg-amber-500 text-white",
+      pillColor: "bg-[#4e87ba] text-white",
       floatingTag: "22% Mortality Reduction",
       floatingStat: "OGCM Benchmark Met"
     },
@@ -48,7 +48,7 @@ export const StickyStepper: React.FC = () => {
         "Next-Level Digital Mobility Outcomes (DMO)"
       ],
       image: "/real_bios/telemetry_pipeline.png",
-      pillColor: "bg-blue-600 text-white",
+      pillColor: "bg-[#0b3856] text-white",
       floatingTag: "Safe Return Home",
       floatingStat: "Hospital Days Saved: -4.2"
     }
@@ -75,12 +75,12 @@ export const StickyStepper: React.FC = () => {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className="text-center max-w-3xl mx-auto mb-10 sm:mb-12"
       >
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/80 text-blue-700 text-xs font-semibold mb-3">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-xs font-semibold mb-3">
           <TurbineLogo size={14} animate={true} />
           <span>WHY CHOOSE US</span>
         </div>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black font-heading tracking-tight text-slate-900">
-          Why Choose <span className="text-blue-600">HIPbeacon?</span>
+          Why Choose <span className="text-[#0b3856]">HIPbeacon?</span>
         </h2>
         <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
           With the world's first implanted hip mobility sensor and BIOS-Cloud data infrastructure, 
@@ -106,7 +106,7 @@ export const StickyStepper: React.FC = () => {
             
             {/* Active animated progress fill line */}
             <motion.div 
-              className="absolute top-4 w-1 bg-blue-600 rounded-full z-0 origin-top"
+              className="absolute top-4 w-1 bg-[#0b3856] rounded-full z-0 origin-top"
               animate={{ height: activeStep === 0 ? '0%' : activeStep === 1 ? '50%' : '100%' }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             />
@@ -121,8 +121,8 @@ export const StickyStepper: React.FC = () => {
                   whileTap={{ scale: 0.95 }}
                   className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center font-bold text-xs transition-all cursor-pointer ${
                     isActive
-                      ? 'bg-blue-600 text-white shadow-xl shadow-blue-500/40 ring-4 ring-blue-100 scale-110'
-                      : 'bg-white text-slate-500 border-2 border-slate-200 hover:border-blue-400'
+                      ? 'bg-[#0b3856] text-white shadow-xl shadow-[#0b3856]/40 ring-4 ring-[#4e87ba]/20 scale-110'
+                      : 'bg-white text-slate-500 border-2 border-slate-200 hover:border-[#4e87ba]'
                   }`}
                 >
                   {step.id}
@@ -144,7 +144,7 @@ export const StickyStepper: React.FC = () => {
           <div className="relative mx-auto max-w-md lg:max-w-none">
             
             {/* Dynamic Colored Backdrop Card */}
-            <div className="rounded-[32px] p-6 sm:p-8 bg-gradient-to-br from-blue-50/70 via-white to-slate-50 border border-slate-200/90 shadow-xl transition-colors duration-500">
+            <div className="rounded-[32px] p-6 sm:p-8 bg-gradient-to-br from-[#4e87ba]/10 via-white to-slate-50 border border-slate-200/90 shadow-xl transition-colors duration-500">
               
               {/* Image Frame Container with AnimatePresence */}
               <div className="relative rounded-2xl overflow-hidden shadow-md bg-white aspect-[4/3] sm:aspect-[14/11] flex items-center justify-center p-4">
@@ -177,14 +177,14 @@ export const StickyStepper: React.FC = () => {
 
                 {/* Floating Top Pill on Image with float 4s */}
                 <div className="absolute top-4 right-4 glass-pill px-4 py-2 rounded-full flex items-center gap-2 shadow-md z-10 animate-float">
-                  <Sparkles className="w-4 h-4 text-amber-500" />
+                  <Sparkles className="w-4 h-4 text-[#4e87ba]" />
                   <span className="text-xs font-bold text-slate-800">{current.floatingTag}</span>
                 </div>
 
                 {/* Floating Bottom Telemetry Widget on Image with float 4s delayed */}
                 <div className="absolute bottom-4 left-4 right-4 rounded-2xl glass-panel p-4 shadow-xl border border-white/90 flex items-center justify-between z-10 animate-float-delayed">
                   <div>
-                    <span className="text-xs uppercase font-black tracking-wider text-blue-700 block">
+                    <span className="text-xs uppercase font-black tracking-wider text-[#0b3856] block">
                       Clinical Status
                     </span>
                     <span className="text-sm font-bold text-slate-900">
@@ -209,7 +209,7 @@ export const StickyStepper: React.FC = () => {
                   onClick={() => setActiveStep(idx)}
                   className={`px-5 py-2 rounded-full text-sm font-bold transition-all cursor-pointer ${
                     activeStep === idx
-                      ? 'bg-blue-600 text-white shadow-md'
+                      ? 'bg-[#0b3856] text-white shadow-md'
                       : 'bg-slate-100 text-slate-600'
                   }`}
                 >
@@ -239,7 +239,7 @@ export const StickyStepper: React.FC = () => {
               transition={{ duration: 0.35, ease: "easeInOut" }}
               className="space-y-4"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-bold">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4e87ba]/15 text-[#0b3856] text-xs font-bold">
                 {current.badge}
               </div>
 
@@ -261,7 +261,7 @@ export const StickyStepper: React.FC = () => {
                     transition={{ delay: i * 0.1, duration: 0.3 }}
                     className="flex items-start gap-3"
                   >
-                    <div className="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-6 h-6 rounded-full bg-[#4e87ba]/15 text-[#0b3856] flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-4 h-4 stroke-[3]" />
                     </div>
                     <span className="text-base font-semibold text-slate-800">{point}</span>
@@ -275,7 +275,7 @@ export const StickyStepper: React.FC = () => {
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   href="#partners"
-                  className="inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-slate-900 hover:bg-blue-600 text-white font-bold text-sm tracking-wide shadow-md transition-all group cursor-pointer"
+                  className="inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-slate-900 hover:bg-[#0b3856] text-white font-bold text-sm tracking-wide shadow-md transition-all group cursor-pointer"
                 >
                   <span>Explore Clinical Evidence</span>
                   <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">

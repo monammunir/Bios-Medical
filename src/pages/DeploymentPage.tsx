@@ -16,14 +16,14 @@ export const DeploymentPage: React.FC = () => {
     >
       {/* Page Hero Header */}
       <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-bold tracking-wide uppercase mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-xs sm:text-sm font-bold tracking-wide uppercase mb-4">
           <TurbineLogo size={15} animate={true} />
           <span>INSTITUTIONAL INTEGRATION</span>
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading text-slate-900 tracking-tight leading-tight">
           Flexible Hospital Deployment <br />
-          <span className="text-blue-600">& Pilot Trial Models</span>
+          <span className="text-[#0b3856]">& Pilot Trial Models</span>
         </h1>
 
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
@@ -33,7 +33,7 @@ export const DeploymentPage: React.FC = () => {
         {/* 3 Step Deployment Process */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto text-left">
           <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs">
-            <span className="text-xs font-black text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">Phase 01</span>
+            <span className="text-xs font-black text-[#0b3856] bg-[#0b3856]/10 px-2.5 py-1 rounded-md">Phase 01</span>
             <h4 className="font-bold text-slate-900 text-base mt-2">Protocol Review</h4>
             <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
               Complementary review of your institutional trial protocol within 48 hours.
@@ -41,7 +41,7 @@ export const DeploymentPage: React.FC = () => {
           </div>
 
           <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs">
-            <span className="text-xs font-black text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md">Phase 02</span>
+            <span className="text-xs font-black text-[#4e87ba] bg-[#4e87ba]/15 px-2.5 py-1 rounded-md">Phase 02</span>
             <h4 className="font-bold text-slate-900 text-base mt-2">Ward Telemetry Setup</h4>
             <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
               Zero-pairing plug-and-play bedside RF gateways installed with zero IT overhead.
@@ -49,7 +49,7 @@ export const DeploymentPage: React.FC = () => {
           </div>
 
           <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs">
-            <span className="text-xs font-black text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">Phase 03</span>
+            <span className="text-xs font-black text-[#0b3856] bg-[#0b3856]/10 px-2.5 py-1 rounded-md">Phase 03</span>
             <h4 className="font-bold text-slate-900 text-base mt-2">EHR & DMO Ingest</h4>
             <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
               Live automated Digital Mobility Outcomes delivered to surgeon ward tablets.

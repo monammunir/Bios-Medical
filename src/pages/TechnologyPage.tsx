@@ -17,14 +17,14 @@ export const TechnologyPage: React.FC = () => {
     >
       {/* Page Hero Header */}
       <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-bold tracking-wide uppercase mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] text-xs sm:text-sm font-bold tracking-wide uppercase mb-4">
           <TurbineLogo size={15} animate={true} />
           <span>TECHNOLOGY & INFRASTRUCTURE</span>
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading text-slate-900 tracking-tight leading-tight">
           Next-Generation Implanted Sensing <br />
-          <span className="text-blue-600">& Sovereign Cloud Telemetry</span>
+          <span className="text-[#0b3856]">& Sovereign Cloud Telemetry</span>
         </h1>
 
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
@@ -34,15 +34,15 @@ export const TechnologyPage: React.FC = () => {
         {/* Feature Pill Tags */}
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm font-bold text-slate-700">
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200/90 shadow-2xs">
-            <CheckCircle2 className="w-4 h-4 text-blue-600" />
+            <CheckCircle2 className="w-4 h-4 text-[#0b3856]" />
             <span>Biocompatible Ti-6Al-4V Titanium</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200/90 shadow-2xs">
-            <CheckCircle2 className="w-4 h-4 text-amber-500" />
+            <CheckCircle2 className="w-4 h-4 text-[#4e87ba]" />
             <span>Sub-Minute Surgical Insertion</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200/90 shadow-2xs">
-            <CheckCircle2 className="w-4 h-4 text-blue-600" />
+            <CheckCircle2 className="w-4 h-4 text-[#0b3856]" />
             <span>AES-256 Cloud Encryption</span>
           </div>
         </div>

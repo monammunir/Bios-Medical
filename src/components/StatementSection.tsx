@@ -63,7 +63,7 @@ export const StatementSection: React.FC = () => {
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                  className="w-9 h-9 rounded-full bg-blue-50 border border-blue-200 shadow-sm flex items-center justify-center shrink-0"
+                  className="w-9 h-9 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 shadow-sm flex items-center justify-center shrink-0"
                 >
                   <TurbineLogo size={18} animate={true} />
                 </motion.span>
@@ -75,7 +75,7 @@ export const StatementSection: React.FC = () => {
                   initial={{ width: 36 }}
                   animate={{ width: 'auto' }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                  className="inline-flex items-center overflow-hidden rounded-full bg-blue-50 border border-blue-200 text-blue-700 shadow-sm text-sm sm:text-base font-bold whitespace-nowrap px-3.5 py-1.5 gap-2"
+                  className="inline-flex items-center overflow-hidden rounded-full bg-[#0b3856]/10 border border-[#0b3856]/20 text-[#0b3856] shadow-sm text-sm sm:text-base font-bold whitespace-nowrap px-3.5 py-1.5 gap-2"
                 >
                   <TurbineLogo size={17} animate={true} />
                   <motion.span
@@ -106,8 +106,8 @@ export const StatementSection: React.FC = () => {
                   transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                   className="inline-flex items-center overflow-hidden align-middle"
                 >
-                  <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-700 shadow-sm text-sm sm:text-base font-bold whitespace-nowrap">
-                    <Shield className="w-4 h-4 text-amber-500" />
+                  <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 text-[#0b3856] shadow-sm text-sm sm:text-base font-bold whitespace-nowrap">
+                    <Shield className="w-4 h-4 text-[#4e87ba]" />
                     <span>OGCM 22%</span>
                   </span>
                 </motion.span>
@@ -132,14 +132,14 @@ export const StatementSection: React.FC = () => {
                   transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                   className="inline-flex items-center overflow-hidden align-middle"
                 >
-                  <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 shadow-sm whitespace-nowrap">
-                    <span className="text-blue-700 font-extrabold text-sm sm:text-base">(</span>
+                  <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#4e87ba]/15 border border-[#4e87ba]/30 shadow-sm whitespace-nowrap">
+                    <span className="text-[#0b3856] font-extrabold text-sm sm:text-base">(</span>
                     <span className="flex -space-x-1.5">
                       <img className="inline-block h-6 w-6 sm:h-7 sm:w-7 rounded-full ring-2 ring-white object-cover" src="/real_bios/markus_windolf_ceo.jpg" alt="Dr. Markus Windolf" />
                       <img className="inline-block h-6 w-6 sm:h-7 sm:w-7 rounded-full ring-2 ring-white object-cover" src="/real_bios/patrick_stepanek_coo.jpg" alt="Dr. Patrick Stepanek" />
                       <img className="inline-block h-6 w-6 sm:h-7 sm:w-7 rounded-full ring-2 ring-white object-cover" src="/real_bios/viktor_varjas_dev.jpg" alt="Viktor Varjas" />
                     </span>
-                    <span className="text-blue-700 font-extrabold text-sm sm:text-base">)</span>
+                    <span className="text-[#0b3856] font-extrabold text-sm sm:text-base">)</span>
                   </span>
                 </motion.span>
               ) : (
